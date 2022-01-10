@@ -1,0 +1,87 @@
+.prize__container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.prize__content{
+    position: relative;
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    margin-bottom: var(--mb-1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.prize__content:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.prize__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-25);
+}
+
+.prize__description{
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh{
+    text-align: center;
+}
+
+.prize__content .first{
+    color:#A239EA;
+}
+
+.prize__content .second{
+    color:#39A2DB;
+}
+
+.prize__content .third{
+    color:#FF616D;
+}
+
+.prize__content .fourth{
+    color:#3C8DAD;
+}
+
+.prize__content .fifth{
+    color:#BF1363;
+}
+
+.prize__content .sixth{
+    color:#FF96AD;
+}
+
+.Prizes .seventh{
+    color:#E4BAD4;
+}
+
+@media screen and (max-width: 350px) {
+    .prize__container{
+        grid-template-columns: repeat(1, 2fr);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .prize__container{
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .prize__container{
+        grid-template-columns: repeat(3, 218px);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .prize__container{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+}
